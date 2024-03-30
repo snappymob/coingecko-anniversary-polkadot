@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 type ArticleItem = {
   thumbnailUrl: string;
+  permalink: string;
   title: string;
   description: string;
   datePublished: string;
@@ -10,29 +11,35 @@ type ArticleItem = {
 const KnowledgeHubSection = () => {
   const [data, setData] = useState<ArticleItem[]>([
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/article-defi.png',
-      title: 'Demystifying Decentralized Finance (DeFi)',
-      description: 'Uncover the revolutionary world of DeFi, understanding its impact on traditional finance.',
-      datePublished: '01 Feb 2024',
+      thumbnailUrl: 'https://cms.polkadot.network/content/images/2024/03/polkadot-dune-kusama-partnership.png',
+      permalink: 'https://polkadot.network/blog/polkadot-kusama-analytics-dune',
+      title: 'Empowering Next-Level Insights: Dune Brings Polkadot and Kusama Analytics into Focus',
+      description:
+        "Today marks a pivotal moment for the blockchain community as Polkadot data is available for the first time on Dune, a leading open-source analytics platform for blockchain data. The result of a strategic partnership between Colorful Notion and Dune, this integration moves the Polkadot ecosystem towards enhanced visibility and in-depth analysis, enabling users to unlock new data-driven insights. By leveraging Dune's robust analytical tools, users can now delve deeper into Polkadot’s expansive ecosystem, fostering informed decision-making and strategic planning. This leap in capability will revolutionize how we measure, compare, and understand the Polkadot ecosystem.",
+      datePublished: '19 Mar 2024',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/article-nft.png',
-      title: 'Navigating NFTs: Art, Collectibles, and Beyond',
+      thumbnailUrl:
+        'https://cms.polkadot.network/content/images/2024/03/polkadot-blockchain-academy-remote-learning.png',
+      permalink: 'https://polkadot.network/blog/polkadot-blockchain-academy-remote-learning-developers',
+      title: 'Polkadot Blockchain Academy Adds Remote Option for Select Students',
       description:
-        'Dive into the realm of Non-Fungible Tokens (NFTs), exploring their significance in digital art, collectibles.',
-      datePublished: '01 Feb 2024',
+        'In order to maximize the benefits of classroom-based education - with all the additional add-ons like engagement, networking, and collaboration - PBA was imagined as an experience that would initially be best provided without a remote element.',
+      datePublished: '18 Mar 2024',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/article-emerging.png',
-      title: 'Rising Stars: Emerging Cryptocurrencies to Watch',
+      thumbnailUrl: 'https://cms.polkadot.network/content/images/2024/03/PAP--Updated-.png',
+      permalink:
+        'https://polkadot.network/blog/the-polkadot-alpha-program-a-new-era-for-decentralized-building-collaboration/',
+      title: 'The Polkadot Alpha Program: A New Era of Collaborative Building',
       description:
-        'Explore the promising landscape of lesser-known cryptocurrencies, discovering the potential contenders.',
-      datePublished: '01 Feb 2024',
+        'The blockchain space is continuously evolving, and with it the opportunities for development and innovation expand. The latest milestone in this story is the exciting launch of the Polkadot Alpha Program, a groundbreaking initiative that lowers entry barriers and fosters a more dynamic environment for teams aiming to bring their blockchain projects to life.',
+      datePublished: '04 Mar 2024',
     },
   ]);
 
   return (
-    <section className="bg-white pt-[120px]" id="knowledge-hub">
+    <section className="bg-white py-[120px]" id="knowledge-hub">
       <div className="container mx-auto">
         <div className="flex items-center justify-center mb-12">
           <div className="text-center flex flex-col justify-center items-center gap-6">
@@ -51,49 +58,22 @@ const KnowledgeHubSection = () => {
               keep you ahead in the crypto game.
             </div>
           </div>
-          <div className="flex gap-8 justify-center pt-6 lg:pt-0 lg:items-end lg:justify-end">
-            <div className="rounded-full flex justify-center items-center h-[40px] w-[40px] bg-[#8390a2] text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2.5"
-                stroke="currentColor"
-                className="mr-1 w-8 h-8"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-              </svg>
-            </div>
-            <div className="rounded-full flex justify-center items-center h-[40px] w-[40px] bg-[#8390a2] text-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2.5"
-                stroke="currentColor"
-                className="ml-1 w-8 h-8"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-              </svg>
-            </div>
-          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           {data.map((d) => (
             <div className="flex flex-col">
-              <div className="rounded-md mb-6 overflow-clip">
-                <img src={d.thumbnailUrl} className="h-full w-full object-cover" alt="" />
+              <a href={d.permalink} title={d.title} target="_blank">
+                <div className="rounded-md mb-6 overflow-clip">
+                  <img src={d.thumbnailUrl} className="h-full w-full object-cover aspect-[7/4]" alt="" />
+                </div>
+                <div className="font-medium text-[28px] line-clamp-2 leading-[30.8px] mb-6">{d.title}</div>
+              </a>
+              <div className="text-lg text-[#64748B] font-normal leading-[21.6px] mb-4 line-clamp-3">
+                {d.description}
               </div>
-              <div className="font-medium text-[28px] leading-[30.8px] mb-6">{d.title}</div>
-              <div className="text-lg text-[#64748B] font-normal leading-[21.6px] mb-4">{d.description}</div>
               <div className="text-[#4A4A4A] text-sm">{d.datePublished}</div>
             </div>
           ))}
-        </div>
-        <div className="flex gap-4 justify-center">
-          <div className="rounded-full h-[12px] w-[12px] bg-slate-400"></div>
-          <div className="rounded-full h-[12px] w-[12px] bg-slate-300"></div>
-          <div className="rounded-full h-[12px] w-[12px] bg-slate-300"></div>
         </div>
       </div>
     </section>

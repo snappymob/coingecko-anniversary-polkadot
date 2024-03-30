@@ -6,9 +6,21 @@ const CompaniesSection = () => {
         <div className="flex flex-wrap justify-around lg:justify-between gap-8 px-4 items-center">
           <img src="http://landing.coingecko.com/wp-content/uploads/2024/03/stripe.png" className="h-12" alt="stripe" />
           <img src="http://landing.coingecko.com/wp-content/uploads/2024/03/google.png" className="h-12" alt="google" />
-          <img src="http://landing.coingecko.com/wp-content/uploads/2024/03/linkedin.png" className="h-12" alt="linkedin" />
-          <img src="http://landing.coingecko.com/wp-content/uploads/2024/03/commvault.png" className="h-12" alt="commvault" />
-          <img src="http://landing.coingecko.com/wp-content/uploads/2024/03/spotify.png" className="h-12" alt="spotify" />
+          <img
+            src="http://landing.coingecko.com/wp-content/uploads/2024/03/linkedin.png"
+            className="h-12"
+            alt="linkedin"
+          />
+          <img
+            src="http://landing.coingecko.com/wp-content/uploads/2024/03/commvault.png"
+            className="h-12"
+            alt="commvault"
+          />
+          <img
+            src="http://landing.coingecko.com/wp-content/uploads/2024/03/spotify.png"
+            className="h-12"
+            alt="spotify"
+          />
         </div>
       </div>
     </section>

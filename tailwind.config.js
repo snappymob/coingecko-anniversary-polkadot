@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        primaryShadow: '0 4px 0 0 #35af00',
-        primaryHover: '0 4px 0 0 #239200',
-        primaryActive: '0 0 0 0 #239200',
+        primaryShadow: '0 4px 0 0 #cf0374',
+        primaryHover: '0 4px 0 0 #b9036f',
+        primaryActive: '0 0 0 0 #b9036f',
         secondaryActive: '0 2px 0 0 #cbd5e1',
         secondaryActiveDark: '0 2px 0 0 #384a61',
         secondaryShadow: '0 4px 0 0 #cbd5e1',
@@ -22,16 +22,16 @@ module.exports = {
       },
       colors: {
         primary: {
-          50: 'rgb(243, 252, 229)',
-          100: 'rgb(232, 252, 201)',
-          200: 'rgb(205, 249, 149)',
-          300: 'rgb(166, 239, 95)',
-          400: 'rgb(128, 224, 56)',
-          500: 'rgb(75, 204, 0)',
-          600: 'rgb(53, 175, 0)',
-          700: 'rgb(35, 146, 0)',
-          800: 'rgb(21, 118, 0)',
-          900: 'rgb(11, 97, 0)',
+          50: '#fce5f0',
+          100: '#f9bddb',
+          200: '#f791c3',
+          300: '#f763aa',
+          400: '#f73d95',
+          500: '#f8007f',
+          600: '#e6007b',
+          700: '#cf0374',
+          800: '#b9036f',
+          900: '#920266',
         },
         moon: {
           50: 'rgb(223, 229, 236)',
