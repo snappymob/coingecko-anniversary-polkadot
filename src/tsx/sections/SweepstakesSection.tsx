@@ -33,14 +33,14 @@ const SweepstakesSection = () => {
       <div className="container mx-auto bg-[#fafbfc]">
         <div className="mb-[60px] flex items-center justify-center">
           <div className="text-center flex flex-col justify-center items-center">
-            <h2 className="mb-6 font-semibold text-[44px] text-[#4A4A4A]">Sweepstakes</h2>
+            <h2 className="mb-6 font-semibold text-[44px]">Sweepstakes</h2>
             <div className="text-lg font-normal leading-[21.6px] text-[#64748B] mb-12 max-w-xl">
               Discover a world of Crypto prizes and elevate your experience to new heights!
             </div>
             <PrimaryButton
               label="View More"
               buttonPt={{ className: 'py-4 px-6 inline-flex' }}
-              innerPt={{ className: 'text-2xl font-bold' }}
+              innerPt={{ className: 'text-2xl' }}
             />
           </div>
         </div>

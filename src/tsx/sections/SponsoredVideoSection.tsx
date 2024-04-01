@@ -1,3 +1,4 @@
+import PrimaryButton from '../components/PrimaryButton';
 import { cn } from '../utils/cn';
 
 type SponsoredVideoSectionProps = {
@@ -34,10 +35,14 @@ const SponsoredVideoSection = ({
           allowFullScreen
         ></iframe>
         <div>
-          <h3 className="font-semibold text-[44px] leading-[48.4px] text-[#4A4A4A] mb-8">{title}</h3>
+          <h3 className="font-semibold text-[44px] leading-[48.4px] mb-8">{title}</h3>
           <div className="text-lg leading-[21.6px] text-[#64748B] mb-[60px]">{description}</div>
-          <a href={callToActionUrl} target="_blank" className="btn-primary py-4 px-6 inline-flex">
-            <div className="text-2xl font-bold btn-primary-text">{callToAction}</div>
+          <a href={callToActionUrl} target="_blank">
+            <PrimaryButton
+              label={callToAction}
+              buttonPt={{ className: 'py-3 px-5 inline-flex' }}
+              innerPt={{ className: 'text-lg' }}
+            />
           </a>
         </div>
       </div>

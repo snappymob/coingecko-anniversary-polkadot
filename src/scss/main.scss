@@ -1,28 +1,28 @@
-.btn-primary {
-  @apply bg-primary-500 shadow-primaryShadow mb-1 hover:bg-primary-600 hover:shadow-primaryHover active:shadow-primaryActive transition-all duration-150 active:translate-y-2 items-center justify-center font-semibold rounded-xl select-none focus:outline-none px-2.5 py-1.5 inline-flex;
-}
-
-.btn-primary-text {
-  @apply text-xs leading-4 text-white hover:text-white focus:text-white font-semibold;
-}
-
-.btn-secondary {
-  @apply bg-white focus:bg-white border-t-2 border-x-2 border-slate-300 shadow-secondaryShadow mb-1 hover:bg-slate-100 hover:shadow-secondaryHover active:shadow-secondaryActive transition-all duration-150 active:translate-y-2 items-center justify-center font-semibold rounded-xl select-none focus:outline-none px-2.5 py-1.5 inline-flex;
-}
-
-.btn-secondary-text {
-  @apply text-xs leading-4 text-slate-900 hover:text-slate-900 focus:text-slate-900 font-semibold;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Unbounded:wght@200..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
 body {
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Unbounded", sans-serif;
+  color: black;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 #nav-links {

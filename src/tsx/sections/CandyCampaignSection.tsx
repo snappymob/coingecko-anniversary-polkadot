@@ -34,7 +34,7 @@ const CandyCampaignSection = () => {
       <div className="container mx-auto">
         <div className="min-h-[300px] my-12 flex flex-col lg:gap-32 md:flex-row justify-between">
           <div className="flex-[1_1_10%] h-min">
-            <h2 className="font-semibold text-[44px] mb-6 text-[#4A4A4A]">Candy Campaign</h2>
+            <h2 className="font-semibold text-[44px] mb-6">Candy Campaign</h2>
             <div className="text-lg font-normal leading-[21.6px] text-[#64748B]">
               Candy Rewards is CoinGecko’s loyalty program, designed to engage and reward our community. Users collect
               candies daily, and spend it on partner rewards – exclusive discounts, voucher credits, raffle and giveaway
@@ -42,7 +42,11 @@ const CandyCampaignSection = () => {
             </div>
           </div>
           <div className="flex-1 aspect-[471/278]">
-            <img src="http://landing.coingecko.com/wp-content/uploads/2024/03/candy-campaign.png" alt="" className="w-full h-full object-contain" />
+            <img
+              src="http://landing.coingecko.com/wp-content/uploads/2024/03/candy-campaign.png"
+              alt=""
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
         <div className="flex gap-8 items-end justify-end mb-8">

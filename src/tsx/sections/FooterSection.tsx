@@ -13,7 +13,7 @@ const FooterSection = () => {
           </a>
         </div>
         <div>
-          <h4 className="pb-5">Resources</h4>
+          <h4 className="pb-5 text-white">Resources</h4>
           <nav>
             <ul>
               <li className="pb-5">
@@ -40,7 +40,7 @@ const FooterSection = () => {
           </nav>
         </div>
         <div>
-          <h4 className="pb-5">Social Media</h4>
+          <h4 className="pb-5 text-white">Social Media</h4>
           <nav>
             <ul>
               <li className="pb-5">

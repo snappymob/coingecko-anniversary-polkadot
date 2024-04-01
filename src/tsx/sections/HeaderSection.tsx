@@ -23,16 +23,11 @@ const HeaderSection = () => {
               { ['visible']: isNavVisible }
             )}
           >
-            <a href="#campaigns">Campaigns</a>
-            <a href="#sweepstakes">Sweepstakes</a>
+            <a href="#hero">Home</a>
             <a href="#knowledge-hub">Knowledge Hub</a>
             <a href="#dapps">DApps</a>
-            <button
-              id="nav-links-hamburger-close"
-              onClick={() => setIsNavVisible(false)}
-              className="lg:hidden btn-secondary p-1.5"
-            >
-              <div className="btn-secondary-text">
+            <button id="nav-links-hamburger-close" onClick={() => setIsNavVisible(false)} className="lg:hidden p-1.5">
+              <div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -46,12 +41,8 @@ const HeaderSection = () => {
               </div>
             </button>
           </div>
-          <button
-            id="nav-links-hamburger-open"
-            onClick={() => setIsNavVisible(true)}
-            className="lg:hidden btn-secondary p-1.5"
-          >
-            <div className="btn-secondary-text">
+          <button id="nav-links-hamburger-open" onClick={() => setIsNavVisible(true)} className="lg:hidden p-1.5">
+            <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

@@ -19,6 +19,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        unbounded: ['Unbounded', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {

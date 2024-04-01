@@ -2,10 +2,10 @@ import PrimaryButton from '../components/PrimaryButton';
 
 const HeroSection = () => {
   return (
-    <section className="h-[calc(100vh-80px)] grid grid-rows-2">
+    <section className="h-[calc(100vh-80px)] bg-white grid grid-rows-2" id="hero">
       <div className="w-full">
         <img
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain xl:object-cover"
           src="http://landing.coingecko.com/wp-content/uploads/2024/03/polkadot-subpage-banner.png"
           alt=""
         />
@@ -22,7 +22,7 @@ const HeroSection = () => {
         <PrimaryButton
           label="Explore Now"
           buttonPt={{ className: 'py-4 px-6 inline-flex', onClick: () => (location.hash = '#knowledge-hub') }}
-          innerPt={{ className: 'text-2xl font-bold' }}
+          innerPt={{ className: 'text-2xl' }}
         />
       </div>
     </section>
