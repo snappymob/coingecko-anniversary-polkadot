@@ -4,13 +4,16 @@ import { DexIcon } from '../components/icons/DexIcon';
 import { GamingIcon } from '../components/icons/GamingIcon';
 import { LstIcon } from '../components/icons/LstIcon';
 import { WalletIcon } from '../components/icons/WalletIcon';
+import { cn } from '../utils/cn';
+
+type DiscoveryDAppsCategory = 'All' | 'Wallet' | 'DeFi' | 'Dex' | 'LST' | 'GameFi & NFT';
 
 type DiscoverDAppsItem = {
   thumbnailUrl: string;
   callToActionUrl: string;
   name: string;
   callToAction: string;
-  category: string;
+  category: DiscoveryDAppsCategory;
   icon: ReactNode;
 };
 
@@ -65,7 +68,7 @@ const DiscoverDAppsSection = () => {
       category: 'Wallet',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/Polkagate.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/PolkaGate.png',
       name: 'PolkaGate',
       callToAction: 'Get PolkaGate',
       callToActionUrl: 'https://polkagate.xyz/',
@@ -78,7 +81,7 @@ const DiscoverDAppsSection = () => {
       callToAction: 'Platform for tokenizing, managing, and investing in a diversified portfolio of real-world assets.',
       callToActionUrl: 'https://centrifuge.io/',
       icon: <DeFiIcon />,
-      category: 'Defi',
+      category: 'DeFi',
     },
     {
       thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/interlay-icon.png',
@@ -86,7 +89,7 @@ const DiscoverDAppsSection = () => {
       callToAction: 'Bitcoin DeFi via a trustless gateway with fiat access and multi-chain support.',
       callToActionUrl: 'https://www.interlay.io/',
       icon: <DeFiIcon />,
-      category: 'Defi',
+      category: 'DeFi',
     },
     {
       thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/starlay-icon.png',
@@ -94,7 +97,7 @@ const DiscoverDAppsSection = () => {
       callToAction: 'Decentralized network for creating, betting on, and resolving prediction markets.',
       callToActionUrl: 'https://starlay.finance/',
       icon: <DeFiIcon />,
-      category: 'Defi',
+      category: 'DeFi',
     },
     {
       thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/Zeitgeist-ZTG.png',
@@ -102,7 +105,7 @@ const DiscoverDAppsSection = () => {
       callToAction: 'First omni-inscriptions marketplace on Polkadot to create, transfer and manage your inscriptions.',
       callToActionUrl: 'https://zeitgeist.pm/',
       icon: <DeFiIcon />,
-      category: 'Defi',
+      category: 'DeFi',
     },
     {
       thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/Moonwell.png',
@@ -111,16 +114,16 @@ const DiscoverDAppsSection = () => {
         'Open lending and borrowing protocol on Base, Moonbeam, and Moonriver with intuitive user interface.',
       callToActionUrl: 'https://moonwell.fi/',
       icon: <DeFiIcon />,
-      category: 'Defi',
+      category: 'DeFi',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/Dotins.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/DOTins.png',
       name: 'Dotins',
       callToAction:
         'Lending protocol that allows quick and easy depositing and borrowing of tokens on top of Astar Network.',
       callToActionUrl: 'https://www.dotins.io/',
       icon: <DeFiIcon />,
-      category: 'Defi',
+      category: 'DeFi',
     },
     {
       thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/HydraDX-HDX.png',
@@ -155,7 +158,7 @@ const DiscoverDAppsSection = () => {
       category: 'Dex',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/PolkaSwap.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/Polkaswap.png',
       name: 'Polkaswap',
       callToAction: 'Non-custodial AMM DEX for fast and secure cross-chain exchange of assets.',
       callToActionUrl: 'https://polkaswap.io/',
@@ -195,7 +198,7 @@ const DiscoverDAppsSection = () => {
       category: 'LST',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/Algem.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/Algem.png',
       name: 'Algem',
       callToAction: 'DeFi dapp for liquid assets on Astar Network.',
       callToActionUrl: 'https://www.algem.io/',
@@ -203,7 +206,7 @@ const DiscoverDAppsSection = () => {
       category: 'LST',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/EQ-Finance.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/EqFinance.png',
       name: 'EQ Finance',
       callToAction: 'The first interest-bearing stablecoin backed by LSTs on Polkadot.',
       callToActionUrl: 'https://equilibrium.io/',
@@ -227,7 +230,7 @@ const DiscoverDAppsSection = () => {
       category: 'LST',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/Heal3.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/heal3.jpg',
       name: 'Heal3',
       callToAction: 'Game-Fi healthcare dapp built on Astar network.',
       callToActionUrl: 'https://heal3.com/',
@@ -243,7 +246,7 @@ const DiscoverDAppsSection = () => {
       category: 'GameFi & NFT',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/GreatEscape.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/TheGreatEscape.png',
       name: 'The Great Escape',
       callToAction: 'New-gen hyper-casual Web3 game based on a free-to-play, gas-less and chain-agnostic model.',
       callToActionUrl: 'https://www.playtge.com/',
@@ -291,7 +294,7 @@ const DiscoverDAppsSection = () => {
       category: 'GameFi & NFT',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/AstarStrike.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/AstarStrike.png',
       name: 'Astar Strike',
       callToAction: 'Multiplayer first-person shooter (FPS) browser game.',
       callToActionUrl: 'https://zkstrike.com/',
@@ -299,7 +302,7 @@ const DiscoverDAppsSection = () => {
       category: 'GameFi & NFT',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/ExiledRacer.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/ExiledRacers.jpg',
       name: 'Exiled Racers',
       callToAction: 'Low touch racing manager and prediction game, integrated with premium digital collectibles.',
       callToActionUrl: 'https://www.exiledracers.com/',
@@ -307,7 +310,7 @@ const DiscoverDAppsSection = () => {
       category: 'GameFi & NFT',
     },
     {
-      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/03/Bluez.png',
+      thumbnailUrl: 'http://landing.coingecko.com/wp-content/uploads/2024/04/Bluez.png',
       name: 'Bluez',
       callToAction: 'Community-driven NFT marketplace built on Astar network.',
       callToActionUrl: 'https://www.bluez.app/',
@@ -324,6 +327,8 @@ const DiscoverDAppsSection = () => {
     },
   ]);
 
+  const [activeFilter, setActiveFilter] = useState<DiscoveryDAppsCategory>('All');
+
   return (
     <section className="py-24 bg-white" id="dapps">
       <div className="container mx-auto">
@@ -334,24 +339,59 @@ const DiscoverDAppsSection = () => {
             platforms.
           </div>
         </div>
+        <div className="flex flex-wrap justify-center gap-4 mt-8">
+          {[{ icon: null, category: 'All' as DiscoveryDAppsCategory }, ...data]
+            .reduce((categories: { category: DiscoveryDAppsCategory; icon: ReactNode }[], curr) => {
+              if (categories.filter((c) => c.category === curr.category).length > 0) {
+                return categories;
+              }
+
+              return [...categories, { category: curr.category, icon: curr.icon }];
+            }, [])
+            .map((cat) => (
+              <button
+                onClick={() => {
+                  if (activeFilter === cat.category) {
+                    setActiveFilter('All');
+                    return;
+                  }
+
+                  setActiveFilter(cat.category);
+                }}
+                className={cn(
+                  'transition-colors border border-solid border-[#33415566] text-[#64748B] rounded-full px-3 py-1 flex items-center gap-2',
+                  { 'bg-primary-50': activeFilter === cat.category },
+                  { 'text-black': activeFilter === cat.category },
+                  { 'border-primary-300': activeFilter === cat.category },
+                  { 'border-primary-300': activeFilter === cat.category },
+                  { 'font-medium': activeFilter === cat.category }
+                )}
+              >
+                {cat.icon}
+                <span className="inline-flex">{cat.category}</span>
+              </button>
+            ))}
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-14 my-12 md:px-20">
-          {data.map((d) => (
-            <a
-              href={d.callToActionUrl}
-              target="_blank"
-              className="border border-solid border-slate-300 rounded-3xl text-center py-4 px-8 flex flex-col items-center shadow-secondaryShadow border-t-2 border-x-2"
-            >
-              <h4 className="text-[28px] font-medium text-xl">{d.name}</h4>
-              <img className="my-6 max-w-40 h-full object-contain" src={d.thumbnailUrl} />
-              <p className="text-[#64748B] mb-2 text-sm" title={d.callToAction}>
-                {d.callToAction}
-              </p>
-              <div className="border border-solid border-[#33415566] text-[#64748B] rounded-full px-3 py-1 flex items-center gap-2">
-                {d.icon}
-                <span className="inline-flex">{d.category}</span>
-              </div>
-            </a>
-          ))}
+          {data
+            .filter((x) => (activeFilter === 'All' ? true : x.category === activeFilter))
+            .map((d) => (
+              <a
+                href={d.callToActionUrl}
+                target="_blank"
+                className="border border-solid border-slate-300 rounded-3xl text-center py-4 px-8 flex flex-col items-center shadow-secondaryShadow border-t-2 border-x-2"
+              >
+                <h4 className="text-[28px] font-medium text-xl">{d.name}</h4>
+                <img className="my-6 max-w-40 h-full object-contain" src={d.thumbnailUrl} />
+                <p className="text-[#64748B] mb-2 text-sm" title={d.callToAction}>
+                  {d.callToAction}
+                </p>
+                <div className="border border-solid border-[#33415566] text-[#64748B] rounded-full px-3 py-1 flex items-center gap-2">
+                  {d.icon}
+                  <span className="inline-flex">{d.category}</span>
+                </div>
+              </a>
+            ))}
         </div>
       </div>
     </section>

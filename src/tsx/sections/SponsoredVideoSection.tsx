@@ -34,7 +34,7 @@ const SponsoredVideoSection = ({
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
-        <div>
+        <div className={cn({ 'lg:text-right': videoSide === 'right' })}>
           <h3 className="font-semibold text-[44px] leading-[48.4px] mb-8">{title}</h3>
           <div className="text-lg leading-[21.6px] text-[#64748B] mb-[60px]">{description}</div>
           <a href={callToActionUrl} target="_blank">

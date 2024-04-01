@@ -14,7 +14,7 @@ const HeaderSection = () => {
               src="https://support.coingecko.com/hc/article_attachments/4499575478169/CoinGecko_logo.png"
               alt=""
             />
-            <div className="text-2xl font-medium">Crypto Engagement Hub</div>
+            <h1 className="text-2xl font-medium">Explore Polkadot</h1>
           </div>
           <div
             id="nav-links"

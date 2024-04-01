@@ -9,7 +9,7 @@ const FooterSection = () => {
               src="https://support.coingecko.com/hc/article_attachments/4499575478169/CoinGecko_logo.png"
               alt=""
             />
-            <div className="text-xl lg:text-2xl font-medium">Crypto Engagement Hub</div>
+            <h1 className="text-xl lg:text-2xl font-medium text-white">Explore Polkadot</h1>
           </a>
         </div>
         <div>
