@@ -20,10 +20,11 @@ const HeroSection = () => {
           </div>
         </div>
         <PrimaryButton
-          label="Explore Now"
           buttonPt={{ className: 'py-4 px-6 inline-flex', onClick: () => (location.hash = '#knowledge-hub') }}
           innerPt={{ className: 'text-2xl' }}
-        />
+        >
+          Explore Now
+        </PrimaryButton>
       </div>
     </section>
   );

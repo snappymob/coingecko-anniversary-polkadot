@@ -43,7 +43,7 @@ const KnowledgeHubSection = () => {
       <div className="container mx-auto">
         <div className="flex items-center justify-center mb-12">
           <div className="text-center flex flex-col justify-center items-center gap-6">
-            <h2 className="font-semibold text-[44px] leading-[48.4px]">Knowledge Hub</h2>
+            <h2 className="font-semibold text-[44px] leading-[48.4px]">Learn About Polkadot</h2>
             <div className="text-lg text-[#64748B] leading-[21.6px] max-w-xl">
               Stay informed and explore the latest insights in the ever-evolving world of cryptocurrencies.
             </div>

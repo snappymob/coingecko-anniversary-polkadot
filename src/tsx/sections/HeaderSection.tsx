@@ -23,9 +23,15 @@ const HeaderSection = () => {
               { ['visible']: isNavVisible }
             )}
           >
-            <a href="#hero">Home</a>
-            <a href="#knowledge-hub">Knowledge Hub</a>
-            <a href="#dapps">DApps</a>
+            <a onClick={() => setIsNavVisible(false)} href="#hero">
+              Home
+            </a>
+            <a onClick={() => setIsNavVisible(false)} href="#knowledge-hub">
+              Knowledge Hub
+            </a>
+            <a onClick={() => setIsNavVisible(false)} href="#dapps">
+              DApps
+            </a>
             <button id="nav-links-hamburger-close" onClick={() => setIsNavVisible(false)} className="lg:hidden p-1.5">
               <div>
                 <svg

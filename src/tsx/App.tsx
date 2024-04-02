@@ -24,17 +24,21 @@ const App = () => {
         {/* <DataCampaignSection /> */}
         <SponsoredVideoSection
           title="What is Polkadot?"
-          description="Polkadot unites, secures and facilitates a network of heterogeneous blockchains called Parachains."
           videoUrl="https://www.youtube.com/embed/29Ty-VTDnh4?si=yPipAeIz3Wxxdiap"
           callToActionUrl="https://wiki.polkadot.network/docs/learn-index"
-        />
+          pt={{ className: 'pb-14' }}
+        >
+          Polkadot unites, secures and facilitates a network of heterogeneous blockchains called Parachains.
+        </SponsoredVideoSection>
         <SponsoredVideoSection
           title="Explore Polkadot with Nova Wallet"
-          description="Learn how to stake, participate in Polkadot OpenGov and more using Nova Wallet."
           videoUrl="https://www.youtube.com/embed/mOZe_OprONQ?si=pobiAaigDSayXsz9"
           videoSide="right"
           callToActionUrl="https://wiki.polkadot.network/docs/learn-index"
-        />
+          pt={{ className: 'pt-14' }}
+        >
+          Learn how to stake, participate in Polkadot OpenGov and more using Nova Wallet.
+        </SponsoredVideoSection>
         <DiscoverDAppsSection />
         <SubHeroSection />
       </main>
