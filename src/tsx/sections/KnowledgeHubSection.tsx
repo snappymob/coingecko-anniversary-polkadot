@@ -39,7 +39,7 @@ const KnowledgeHubSection = () => {
   ]);
 
   return (
-    <section className="bg-white py-[120px]" id="knowledge-hub">
+    <section className="bg-slate-50 py-12" id="knowledge-hub">
       <div className="container mx-auto">
         <div className="flex items-center justify-center mb-12">
           <div className="text-center flex flex-col justify-center items-center gap-6">
@@ -59,7 +59,7 @@ const KnowledgeHubSection = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-6">
           {data.map((d) => (
             <div className="flex flex-col">
               <a href={d.permalink} title={d.title} target="_blank">

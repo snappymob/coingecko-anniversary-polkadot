@@ -330,7 +330,7 @@ const DiscoverDAppsSection = () => {
   const [activeFilter, setActiveFilter] = useState<DiscoveryDAppsCategory>('All');
 
   return (
-    <section className="py-24 bg-white" id="dapps">
+    <section className="py-12 bg-slate-50" id="dapps">
       <div className="container mx-auto">
         <div className="text-center max-w-xl mx-auto">
           <h3 className="font-semibold text-[44px] leading-[48.4px] mb-6">Discover DApps</h3>
@@ -359,7 +359,7 @@ const DiscoverDAppsSection = () => {
                   setActiveFilter(cat.category);
                 }}
                 className={cn(
-                  'transition-colors border border-solid border-[#33415566] text-[#64748B] rounded-full px-3 py-1 flex items-center gap-2',
+                  'transition-colors bg-white border border-solid border-[#33415566] text-[#64748B] rounded-full px-3 py-1 flex items-center gap-2',
                   { 'bg-primary-50': activeFilter === cat.category },
                   { 'text-black': activeFilter === cat.category },
                   { 'border-primary-300': activeFilter === cat.category },
@@ -379,16 +379,18 @@ const DiscoverDAppsSection = () => {
               <a
                 href={d.callToActionUrl}
                 target="_blank"
-                className="border border-solid border-slate-300 rounded-3xl text-center py-4 px-8 flex flex-col items-center shadow-secondaryShadow border-t-2 border-x-2"
+                className="border bg-white border-solid border-slate-300 rounded-3xl text-center py-4 px-8 flex flex-col items-center justify-between shadow-secondaryShadow border-t-2 border-x-2"
               >
                 <h4 className="text-[28px] font-medium text-xl">{d.name}</h4>
-                <img className="my-6 max-w-40 h-full object-contain" src={d.thumbnailUrl} />
-                <p className="text-[#64748B] mb-2 text-sm" title={d.callToAction}>
-                  {d.callToAction}
-                </p>
-                <div className="border border-solid border-[#33415566] text-[#64748B] rounded-full px-3 py-1 flex items-center gap-2">
-                  {d.icon}
-                  <span className="inline-flex">{d.category}</span>
+                <img className="my-6 max-w-40 object-contain" src={d.thumbnailUrl} />
+                <div className="flex flex-col items-center">
+                  <p className="text-[#64748B] mb-2 text-sm" title={d.callToAction}>
+                    {d.callToAction}
+                  </p>
+                  <div className="border border-solid border-[#33415566] text-[#64748B] rounded-full px-3 py-1 flex items-center gap-2">
+                    {d.icon}
+                    <span className="inline-flex">{d.category}</span>
+                  </div>
                 </div>
               </a>
             ))}

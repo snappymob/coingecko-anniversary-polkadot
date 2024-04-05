@@ -23,7 +23,7 @@ const SponsoredVideoSection = ({
   const { className, ...rest } = pt;
 
   return (
-    <section className={cn('py-28', className)} {...rest}>
+    <section className={cn('py-12', className)} {...rest}>
       <div
         className={cn('container mx-auto flex flex-wrap lg:flex-nowrap gap-6 md:gap-[60px]', {
           'lg:flex-row-reverse': videoSide == 'right',
@@ -41,7 +41,7 @@ const SponsoredVideoSection = ({
         ></iframe>
         <div className="lg:basis-[40%] lg:flex-none">
           <h3 className="font-semibold text-[44px] leading-[48.4px] mb-8">{title}</h3>
-          <div className="text-lg leading-[21.6px] text-[#64748B] mb-[60px]">{children}</div>
+          <div className="text-lg leading-[21.6px] text-[#64748B] mb-8">{children}</div>
           <a href={callToActionUrl} target="_blank">
             <PrimaryButton buttonPt={{ className: 'py-3 px-5 inline-flex' }} innerPt={{ className: 'text-lg' }}>
               {callToAction}

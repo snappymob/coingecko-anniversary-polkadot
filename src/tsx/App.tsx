@@ -26,7 +26,7 @@ const App = () => {
           title="What is Polkadot?"
           videoUrl="https://www.youtube.com/embed/29Ty-VTDnh4?si=yPipAeIz3Wxxdiap"
           callToActionUrl="https://wiki.polkadot.network/docs/learn-index"
-          pt={{ className: 'pb-14' }}
+          pt={{ className: 'pb-14 bg-white' }}
         >
           Polkadot unites, secures and facilitates a network of heterogeneous blockchains called Parachains.
         </SponsoredVideoSection>
@@ -35,7 +35,7 @@ const App = () => {
           videoUrl="https://www.youtube.com/embed/mOZe_OprONQ?si=pobiAaigDSayXsz9"
           videoSide="right"
           callToActionUrl="https://wiki.polkadot.network/docs/learn-index"
-          pt={{ className: 'pt-14' }}
+          pt={{ className: 'pt-14 bg-white' }}
         >
           Learn how to stake, participate in Polkadot OpenGov and more using Nova Wallet.
         </SponsoredVideoSection>

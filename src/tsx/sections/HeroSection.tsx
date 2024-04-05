@@ -2,7 +2,7 @@ import PrimaryButton from '../components/PrimaryButton';
 
 const HeroSection = () => {
   return (
-    <section className="h-[calc(100vh-80px)] bg-white grid grid-rows-2" id="hero">
+    <section className="h-[calc(100vh-80px)] bg-white grid grid-rows-[auto_1fr] lg:grid-rows-2" id="hero">
       <div className="w-full">
         <img
           className="w-full h-full object-contain xl:object-cover"
@@ -20,7 +20,8 @@ const HeroSection = () => {
           </div>
         </div>
         <PrimaryButton
-          buttonPt={{ className: 'py-4 px-6 inline-flex', onClick: () => (location.hash = '#knowledge-hub') }}
+          onClick={() => (location.hash = '#knowledge-hub')}
+          buttonPt={{ className: 'py-4 px-6 inline-flex' }}
           innerPt={{ className: 'text-2xl' }}
         >
           Explore Now
