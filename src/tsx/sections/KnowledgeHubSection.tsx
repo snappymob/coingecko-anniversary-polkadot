@@ -39,7 +39,7 @@ const KnowledgeHubSection = () => {
   ]);
 
   return (
-    <section className="bg-slate-50 py-12" id="knowledge-hub">
+    <section className="bg-white py-12" id="knowledge-hub">
       <div className="container mx-auto">
         <div className="flex items-center justify-center mb-12">
           <div className="text-center flex flex-col justify-center items-center gap-6">

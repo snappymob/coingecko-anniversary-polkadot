@@ -330,7 +330,7 @@ const DiscoverDAppsSection = () => {
   const [activeFilter, setActiveFilter] = useState<DiscoveryDAppsCategory>('All');
 
   return (
-    <section className="py-12 bg-slate-50" id="dapps">
+    <section className="py-12 bg-white" id="dapps">
       <div className="container mx-auto">
         <div className="text-center max-w-xl mx-auto">
           <h3 className="font-semibold text-[44px] leading-[48.4px] mb-6">Discover DApps</h3>
@@ -379,7 +379,7 @@ const DiscoverDAppsSection = () => {
               <a
                 href={d.callToActionUrl}
                 target="_blank"
-                className="border bg-white border-solid border-slate-300 rounded-3xl text-center py-4 px-8 flex flex-col items-center justify-between shadow-secondaryShadow border-t-2 border-x-2"
+                className="border bg-slate-50 border-solid border-slate-300 rounded-3xl text-center py-4 px-8 flex flex-col items-center justify-between shadow-secondaryShadow border-t-2 border-x-2"
               >
                 <h4 className="text-[28px] font-medium text-xl">{d.name}</h4>
                 <img className="my-6 max-w-40 object-contain" src={d.thumbnailUrl} />
