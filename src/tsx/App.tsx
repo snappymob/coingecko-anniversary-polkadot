@@ -17,7 +17,15 @@ const App = () => {
         {/* <CompaniesSection /> */}
         {/* <CandyCampaignSection /> */}
         {/* <SweepstakesSection /> */}
-        <MeetupSection />
+        <SponsoredVideoSection
+          title="Peering into the Polkadot Ecosystem"
+          videoUrl="https://www.youtube.com/embed/2xM504NWdwY?si=lwz356yBpDGakKeW"
+          pt={{ className: 'pb-14 bg-slate-5' }}
+        >
+          Join us and our Head of Research, Zhong Yang Chan, as he presents key highlights of our 2024 Q1 Crypto
+          Industry Report – from an overview of crypto markets, to analyzing Bitcoin and Ethereum, deep diving into DeFi
+          and NFT ecosystems, and finally CEX and DEX performances.
+        </SponsoredVideoSection>
         <KnowledgeHubSection />
         {/* <DataCampaignSection /> */}
         <SponsoredVideoSection
